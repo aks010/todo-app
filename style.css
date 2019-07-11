@@ -1,0 +1,139 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+}
+
+.container {
+    width: 75%;
+    max-width: 600px;
+    margin: auto;
+    margin-top:2%;
+    border: 0.5px solid #bdbdbd;
+    box-shadow: 1px 1px 1px #9e9e9e;
+    padding: 3% 2%;
+    background: white;  
+}
+
+.card-title {
+    font-size: 2.8rem;
+    color: #212121;
+    display:block;
+    margin-bottom:4%;
+}   
+
+#task-form {
+    margin-top: 2%;
+}
+.input-field {
+    margin-bottom: 2%;
+    font-size: 1.5rem;
+    color: #494949; 
+    position: relative;
+    padding-top: 10px;
+}
+
+.input-field input {
+    border: none;   
+    border-bottom: 1.5px solid #bdbdbd; 
+    display: block;
+    font-size: 1.5rem;
+    color: #494949;
+    width: 100%;
+    padding: 5px 5px;
+    
+}
+
+.input-field input:focus, .input-field input:active {
+    outline: none;
+    border-bottom-color: #039be5;
+}
+
+
+@keyframes moveup {
+    0% { 
+        top: 10px;
+         font-size: 1.5rem
+        }
+    100% {
+        top:0px;
+        font-size: 1rem;
+        }
+}
+
+.input-field label {
+    position: absolute;
+    top: -5px;
+    left: 5px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+
+.input-field label:active{
+    color: #039be5;
+    animation-name: moveup;
+    animation-timing-function: ease-out;
+    animation-delay: 5s;
+    animation-iteration-count: 1;
+}
+
+.btn {
+        outline: none;
+        border: none;
+        background:none;
+        color:white;
+        padding: 10px 30px;
+        font-size: 1.2rem;
+        background-color:#00b386;
+        border-radius: 0.2rem;
+        text-transform: uppercase; 
+        font-weight: bold;
+        margin-top: 8px;
+}
+
+.btn:hover {
+    box-shadow: 1px 1px 1px #494949a6;
+    cursor:;
+}
+
+h5 {
+    font-size: 3.0rem;
+    font-weight: normal;
+    margin-top:10%;
+    margin-bottom:4%;
+}
+
+.card-action .clear-tasks {
+    background: black;
+}
+
+.collection {
+    list-style-type: none;
+    padding:0;
+    font-size: 1.5rem;
+}
+
+.collection-item {
+    padding: 2%;
+    margin:0;
+    border: 1px solid #bdbdbd;
+    border-top:none;
+    border-radius: 0.2rem;
+    background: white;
+}
+.collection-item:first-child {
+    border-top: 1px solid #bdbdbd;
+}
+
+.delete-item {
+    float: right;
+    margin-right: 20px;
+    padding: 3px;
+    margin-top: -3px;
+}
+.fa-times:hover{
+    cursor: -webkit-grab;
+}
+.fa-times:active {
+    cursor: -webkit-grfcurabbing;
+}
